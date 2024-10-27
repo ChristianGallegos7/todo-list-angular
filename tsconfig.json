@@ -3,7 +3,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@app/*": ["./src/*"],
+      "@src/*": ["./src/*"],
+      "@app/*": ["./app/*"],
       "@shared/*": ["./src/shared/*"],
       "@store/*": ["./src/store/*"]
     },
