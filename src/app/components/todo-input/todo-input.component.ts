@@ -1,4 +1,6 @@
 import { Component, EventEmitter, inject, Output } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { createTodo } from '@src/app/state/actions/todoItem.actions';
 
 
 @Component({
@@ -9,5 +11,10 @@ import { Component, EventEmitter, inject, Output } from '@angular/core';
 })
 export class TodoInputComponent {
 
-  
+  private store = inject(Store);
+
+  public addTodo() {
+    this.store.dispatch(createTodo())
+  }
+
 }
