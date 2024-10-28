@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-todo-input',
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class TodoInputComponent {
 
+  
 }
